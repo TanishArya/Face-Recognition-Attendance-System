@@ -54,7 +54,7 @@ To run the Face Recognition Attendance System, follow these steps:
 - Clone the repository:
   
 ```bash
-git clone https://github.com/your_username/face-recognition-attendance.git
+git clone https://github.com/TanishArya/Face-Recognition-Attendance-System.git
 ```
   
 - Install the required dependencies:
