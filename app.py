@@ -11,6 +11,7 @@ from win32com.client import Dispatch
 import pandas as pd
 import base64
 import uuid
+from tkinter import messagebox
 
 def home():
   st.title("Face Recognition Attendence System")
@@ -97,10 +98,6 @@ def register_faces():
 def take_attendance(branch, year):
     st.title("Take Attendance")
 
-    def speak(text):
-        speak = Dispatch("SAPI.SpVoice")
-        speak.Speak(text)
-
     st.write("Please look at the camera to take attendance.")
     st.write("For Mark Attendence Press = O")
     st.write("For Exit = Q")
@@ -156,8 +153,9 @@ def take_attendance(branch, year):
         k = cv2.waitKey(1)
 
         if k == ord('o'):
-            speak("Attendance Taken..")
+            messagebox.showinfo("Attendance Recognition","Attendance Taken")
             time.sleep(3)
+            continue
             if exist:
                 pass
             else:
