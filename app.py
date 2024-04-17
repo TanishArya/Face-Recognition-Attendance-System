@@ -10,7 +10,6 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import base64
 import uuid
-from tkinter import messagebox
 
 def home():
   st.title("Face Recognition Attendence System")
@@ -152,7 +151,7 @@ def take_attendance(branch, year):
         k = cv2.waitKey(1)
 
         if k == ord('o'):
-            messagebox.showinfo("Attendance Recognition","Attendance Taken")
+            st.info("Attendance Taken")
             time.sleep(3)
             continue
             if exist:
