@@ -7,7 +7,6 @@ import csv
 import time
 from datetime import datetime
 from sklearn.neighbors import KNeighborsClassifier
-from win32com.client import Dispatch
 import pandas as pd
 import base64
 import uuid
