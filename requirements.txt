@@ -3,4 +3,3 @@ opencv-python==4.9.0.80
 numpy==1.26.4
 scikit-learn==1.4.2
 pandas==2.2.2
-tk==8.6.14
