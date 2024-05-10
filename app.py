@@ -152,8 +152,7 @@ def take_attendance(branch, year):
 
         if k == ord('o'):
             st.info("Attendance Taken")
-            time.sleep(3)
-            continue
+            time.sleep(5)
             if exist:
                 pass
             else:
